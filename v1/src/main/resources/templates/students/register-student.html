@@ -6,48 +6,69 @@
     <title>RS - Registro de Alumno</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #f4f7f6;
-            font-family: 'Arial', sans-serif;
-        }
+       body {
+        background-color: #f4f7f6;
+        font-family: 'Arial', sans-serif;
+    }
 
-        .container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    .container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        h2 {
-            color: #004d99; /* Azul oscuro */
-        }
+    h2 {
+        color: #004d99; /* Azul oscuro */
+    }
 
-        .form-label {
-            color: #555;
-        }
+    .form-label {
+        color: #fcfcfc;
+    }
 
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
 
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-        }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
 
-        .btn {
-            width: 100%;
-        }
+    .btn {
+        width: 48%; /* Ajustamos el tamaño de los botones */
+        padding: 10px; /* Añadimos un padding adicional */
+        border-radius: 5px; /* Bordes redondeados */
+        border: 1px solid #ccc;
+    }
 
-        .select-style {
-            background-color: #e9ecef;
-        }
+    .btn-back {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
 
-        .form-control {
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
+    .btn-back:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .select-style {
+        background-color: #e9ecef;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+        
+
     </style>
 </head>
 <body>
@@ -102,7 +123,10 @@
             </div>
 
             <!-- Botón de Enviar -->
-            <button type="submit" class="btn btn-primary">Registrar</button>
+            <div class="btn-container">
+                <button type="submit" class="btn btn-primary">Registrar</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='/RS/'">Volver</button>
+            </div>
         </form>
     </div>
 
