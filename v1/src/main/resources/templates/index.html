@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS</title>
+  <!-- Vincula Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f4f8; /* Fondo suave */
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar {
+      background-color: #2c3e50; /* Azul oscuro para la barra de navegación */
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #3498db !important;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-label {
+      color: #34495e; /* Gris oscuro para las etiquetas */
+    }
+    .btn-primary {
+      background-color: #3498db; /* Azul brillante para el botón */
+      border-color: #3498db;
+    }
+    .btn-primary:hover {
+      background-color: #2980b9;
+      border-color: #2980b9;
+    }
+    h2 {
+      color: #2c3e50; /* Azul oscuro para el encabezado */
+    }
+    footer {
+      background-color: #34495e; /* Gris oscuro en el pie de página */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer img {
+      width: 100%;
+      height: auto;
+      border-top: 5px solid #3498db;
+    }
+  </style>
 </head>
 <body>
-    Hola Mundo
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Academia de patinaje Roller Speed </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../student/register-student">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor Principal -->
+  <div class="container mt-5">
+    <h1 class="text-center">Nuestra Empresa</h1>
+    <form>
+      
+    <!-- Cards horizontales -->
+    <h2 class="text-center mt-5">¿Quienes somos?</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="/img/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold ">Misión</h5>
+            <p class="card-text">En nuestra academia de patinaje, nos dedicamos a ofrecer clases y experiencias de patinaje para personas de todas las edades, sin fines de lucro, con el objetivo principal de fomentar la diversión y el disfrute del patinaje. Buscamos crear una comunidad unida y activa, donde todos, desde los más pequeños hasta los adultos, puedan aprender, compartir y disfrutar de este deporte. Además, organizamos eventos esporádicos para salir a rodar juntos, promoviendo la interacción social, el ejercicio físico y el espíritu de camaradería.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="/img/img3.jpg" alt="Imagen de Patinaje">
+          <div class="card-body">
+            <h5 class="card-title fw-bold ">Visión</h5>
+            <p class="card-text">Ser la comunidad líder de patinaje inclusivo, donde cada miembro se sienta apoyado y motivado a superarse, independientemente de su edad o nivel de habilidad. Aspiramos a que nuestras actividades y eventos se expandan más allá de las clases, creando un espacio donde las personas se reúnan a disfrutar del patinaje, promoviendo la salud, el bienestar y la diversión en un ambiente amigable y colaborativo. Queremos que más personas se sumen a nuestra causa y que el patinaje se convierta en una actividad popular, accesible y llena de alegría para todos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="/img/img2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold ">¿Te gustaría aprender a patinar, divertirte y conocer gente increíble?</h5>
+            <p class="card-text">Únete a nuestra comunidad de patinadores y disfruta de clases para todas las edades, sin presión y con mucha diversión. No importa si eres principiante o experto, ¡todos son bienvenidos! Salidas esporádicas, nuevos amigos y mucho rodar juntos.
+            </p>
+            <p class="fw-bold fst-italic">   ¡Inscríbete y empieza a rodar hoy mismo!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pie de página con imagen -->
+  <footer>
+    <p>&copy; 2025 Academia de patinaje Roller Speed</p>
+    <img src="https://via.placeholder.com/1500x300/2980b9/ffffff?text=Imagen+de+Patinaje" alt="Academia de Patinaje">
+  </footer>
+
+  <!-- Vincula los scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
