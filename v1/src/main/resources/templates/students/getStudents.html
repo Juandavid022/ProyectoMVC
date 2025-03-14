@@ -38,17 +38,42 @@
         }
 
         .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
+            background-color: #004d99;
+            border-color: #004d99;
         }
 
         .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
+            background-color: #2a7bd1;
+            border-color: #2a7bd1;
         }
 
         .btn {
             width: 100%;
+        }
+
+        .btn {
+            width: 48%; /* Ajustamos el tamaño de los botones */
+            padding: 10px; /* Añadimos un padding adicional */
+            border-radius: 5px; /* Bordes redondeados */
+            border: 1px solid #ccc;
+        }
+
+        .btn-back {
+            background-color: #1160b4;
+            border-color: #1160b4;
+        }
+
+        .btn-back:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        /* Cambios para centrar el botón */
+        .btn-container {
+            display: flex;
+            justify-content: center; /* Centra el botón horizontalmente */
+            align-items: center; /* Centra el botón verticalmente */
+            margin-top: 20px; /* Espacio superior */
         }
     </style>
 </head>
@@ -57,7 +82,7 @@
         <h2>Lista de Estudiantes</h2>
 
         <!-- Tabla para mostrar los alumnos -->
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -75,6 +100,9 @@
                 </tr>
             </tbody>
         </table>
+        <div class="btn-container">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/RS/'">Inicio</button>
+        </div>
     </div>
 </body>
 </html>
