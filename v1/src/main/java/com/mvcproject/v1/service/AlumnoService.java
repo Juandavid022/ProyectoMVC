@@ -12,6 +12,7 @@ public interface AlumnoService {
     List<AlumnoModel> listar();
     AlumnoModel listarId(Long id);
     AlumnoModel guardar(AlumnoModel alumno);
+    
 
 
     
